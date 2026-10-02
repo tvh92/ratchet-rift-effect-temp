@@ -1,0 +1,57 @@
+[
+    {
+        "name": "games",
+        "source": "https://static.wikia.nocookie.net/ratchet/images/3/34/Games_portal.png/revision/latest",
+        "external": true
+    },
+    {
+        "name": "characters",
+        "source": "https://static.wikia.nocookie.net/ratchet/images/4/41/Characters_portal.png/revision/latest",
+        "external": true
+    },
+    {
+        "name": "organizations",
+        "source": "https://static.wikia.nocookie.net/ratchet/images/8/80/Organizations_portal.png/revision/latest",
+        "external": true
+    },
+    {
+        "name": "locations",
+        "source": "https://static.wikia.nocookie.net/ratchet/images/4/4a/Locations_portal.png/revision/latest",
+        "external": true
+    },
+    {
+        "name": "enemies",
+        "source": "https://static.wikia.nocookie.net/ratchet/images/1/1a/Enemies_portal.png/revision/latest",
+        "external": true
+    },
+    {
+        "name": "weapons",
+        "source": "https://static.wikia.nocookie.net/ratchet/images/2/22/Weapons_portal.png/revision/latest",
+        "external": true
+    },
+    {
+        "name": "vehicles",
+        "source": "https://static.wikia.nocookie.net/ratchet/images/a/a5/Vehicles_portal.png/revision/latest",
+        "external": true
+    },
+    {
+        "name": "gadgets",
+        "source": "https://static.wikia.nocookie.net/ratchet/images/4/41/Gadgets_portal.png/revision/latest",
+        "external": true
+    },
+    {
+        "name": "species",
+        "source": "https://static.wikia.nocookie.net/ratchet/images/7/7a/Species_portal.png/revision/latest",
+        "external": true
+    },
+    {
+        "name": "items",
+        "source": "https://static.wikia.nocookie.net/ratchet/images/c/c6/Items_portal.png/revision/latest",
+        "external": true
+    },
+    {
+        "name": "guides",
+        "source": "https://static.wikia.nocookie.net/ratchet/images/8/8a/Guides_portal.png/revision/latest",
+        "external": true
+    }
+]

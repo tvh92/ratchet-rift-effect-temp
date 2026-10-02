@@ -1,0 +1,304 @@
+@font-face {
+    font-family: "Aguda Bold";
+    src: url("https://static.wikia.nocookie.net/ratchet/images/e/ed/Aguda_Bold.woff/revision/latest")
+        format("woff");
+}
+:root {
+    color-scheme: dark;
+    --rc-mp-caption-color: #a9d6ff;
+    --rc-mp-accent: #a9d6ff;
+    --rc-mp-label-font: "Aguda Bold", Arial, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background: #0b0e32;
+    color: #f2f4ff;
+    font:
+        16px/1.6 Arial,
+        sans-serif;
+}
+main {
+    max-width: 1240px;
+    margin: auto;
+    padding: 32px;
+}
+h1 {
+    color: #eef1a3;
+    font-size: clamp(28px, 5vw, 44px);
+}
+a {
+    color: #a9d6ff;
+}
+.demo-intro {
+    margin-bottom: 48px;
+}
+.demo-intro p {
+    max-width: 760px;
+    font-weight: 600;
+}
+.rc-mp-icons {
+    padding: 32px 0 48px;
+}
+.reference {
+    margin-top: 32px;
+}
+.reference img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.rc-mp-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px 16px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.rc-mp-icon {
+    position: relative;
+    display: block;
+    flex: 0 1 calc((100% - 48px) / 4);
+    min-width: 0;
+    text-align: center;
+    transition: opacity 0.25s ease;
+}
+.rc-mp-icon a {
+    display: block;
+    color: var(--rc-mp-caption-color, #a9d6ff);
+    text-decoration: none;
+}
+.rc-mp-icon a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+.rc-mp-icon a:focus-visible {
+    outline: 2px solid var(--rc-mp-accent, #a9d6ff);
+    outline-offset: 4px;
+}
+.rc-mp-icon-art {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: min(100%, 205px);
+    aspect-ratio: 1;
+    margin: 0 auto;
+}
+.rc-mp-icon-art::before {
+    content: "";
+    position: absolute;
+    inset: 11%;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        var(--rc-mp-icon-glow, rgba(100, 155, 255, 0.5)),
+        transparent 70%
+    );
+    opacity: 0;
+    transform: scale(0.76);
+    transition:
+        opacity 0.25s ease,
+        transform 0.35s ease;
+}
+.rc-mp-icon-art::after {
+    content: "";
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 84%;
+    height: 84%;
+    background-image: var(--rc-mp-icon-image, none);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: saturate(0.72) brightness(0.92);
+    transition:
+        filter 0.25s ease,
+        transform 0.35s ease;
+}
+.rc-mp-icon-label {
+    display: block;
+    margin-top: 2px;
+    color: var(--rc-mp-caption-color, #a9d6ff);
+    font-family: var(--rc-mp-label-font, Arial, sans-serif);
+    font-size: clamp(20px, 2.3vw, 27px);
+    line-height: 1.2;
+}
+.rc-mp-icon-label a {
+    display: block;
+    color: inherit;
+}
+.rc-mp-icons:has(.rc-mp-icon:hover) .rc-mp-icon:not(:hover) {
+    opacity: 0.48;
+}
+.rc-mp-icon:hover .rc-mp-icon-art::before,
+.rc-mp-icon:focus-within .rc-mp-icon-art::before {
+    opacity: 1;
+    transform: scale(1);
+}
+.rc-mp-icon:hover .rc-mp-icon-art::after,
+.rc-mp-icon:focus-within .rc-mp-icon-art::after {
+    filter: saturate(1.28) brightness(1.25) drop-shadow(0 0 14px rgba(139, 195, 255, 0.5));
+    transform: scale(1.045);
+}
+.rc-mp-icon:hover .rc-mp-icon-label,
+.rc-mp-icon:focus-within .rc-mp-icon-label {
+    color: #fff;
+}
+
+.rc-mp-icon--games {
+    --rc-mp-icon-image: url("https://static.wikia.nocookie.net/ratchet/images/3/34/Games_portal.png/revision/latest");
+}
+.rc-mp-icon--characters {
+    --rc-mp-icon-image: url("https://static.wikia.nocookie.net/ratchet/images/4/41/Characters_portal.png/revision/latest");
+}
+.rc-mp-icon--organizations {
+    --rc-mp-icon-image: url("https://static.wikia.nocookie.net/ratchet/images/8/80/Organizations_portal.png/revision/latest");
+}
+.rc-mp-icon--locations {
+    --rc-mp-icon-image: url("https://static.wikia.nocookie.net/ratchet/images/4/4a/Locations_portal.png/revision/latest");
+}
+.rc-mp-icon--enemies {
+    --rc-mp-icon-image: url("https://static.wikia.nocookie.net/ratchet/images/1/1a/Enemies_portal.png/revision/latest");
+}
+.rc-mp-icon--weapons {
+    --rc-mp-icon-image: url("https://static.wikia.nocookie.net/ratchet/images/2/22/Weapons_portal.png/revision/latest");
+}
+.rc-mp-icon--vehicles {
+    --rc-mp-icon-image: url("https://static.wikia.nocookie.net/ratchet/images/a/a5/Vehicles_portal.png/revision/latest");
+}
+.rc-mp-icon--gadgets {
+    --rc-mp-icon-image: url("https://static.wikia.nocookie.net/ratchet/images/4/41/Gadgets_portal.png/revision/latest");
+}
+.rc-mp-icon--species {
+    --rc-mp-icon-image: url("https://static.wikia.nocookie.net/ratchet/images/7/7a/Species_portal.png/revision/latest");
+}
+.rc-mp-icon--items {
+    --rc-mp-icon-image: url("https://static.wikia.nocookie.net/ratchet/images/c/c6/Items_portal.png/revision/latest");
+}
+.rc-mp-icon--guides {
+    --rc-mp-icon-image: url("https://static.wikia.nocookie.net/ratchet/images/8/8a/Guides_portal.png/revision/latest");
+}
+.rc-mp-icon-art {
+    isolation: isolate;
+    pointer-events: none;
+}
+.rc-mp-icon-art::before {
+    inset: -13%;
+    z-index: 0;
+    border-radius: 0;
+    background: url("assets/rift-aperture.svg") center / contain no-repeat;
+    opacity: 0;
+    transform: scale(0.78);
+    transition: none;
+}
+.rc-mp-rift-frame {
+    position: absolute;
+    inset: -13%;
+    z-index: 2;
+    background: url("assets/rift-portal.svg") center / contain no-repeat;
+    opacity: 0;
+    transform: scale(0.92);
+    pointer-events: none;
+}
+.rc-mp-icon-art::after {
+    transform: scale(1);
+    transition:
+        filter 0.3s ease,
+        transform 0.45s ease;
+}
+.rc-mp-icon a::after {
+    z-index: 3;
+}
+.rc-mp-icon:hover .rc-mp-icon-art::before,
+.rc-mp-icon:focus-within .rc-mp-icon-art::before {
+    animation: rc-preview-rift-open 0.6s cubic-bezier(0.16, 0.8, 0.28, 1) both;
+}
+.rc-mp-icon:hover .rc-mp-rift-frame,
+.rc-mp-icon:focus-within .rc-mp-rift-frame {
+    animation:
+        rc-preview-rift-frame 0.65s cubic-bezier(0.16, 0.8, 0.28, 1) both,
+        rc-preview-rift-energy 1.7s ease-in-out 0.65s infinite alternate;
+}
+.rc-mp-icon:hover .rc-mp-icon-art::after,
+.rc-mp-icon:focus-within .rc-mp-icon-art::after {
+    filter: brightness(0) saturate(100%) invert(83%) sepia(85%) saturate(1050%) hue-rotate(340deg)
+        brightness(108%) drop-shadow(0 0 3px #fff1a3) drop-shadow(0 0 9px #ff9100);
+    transform: scale(0.88);
+}
+.rc-mp-icon:is(:hover, :focus-within) .rc-mp-icon-label,
+.rc-mp-icon:is(:hover, :focus-within) .rc-mp-icon-label a {
+    color: #ffdc70;
+    text-shadow:
+        0 0 3px #fff1aa,
+        0 0 10px #ff9b18,
+        0 0 20px #eb6200;
+}
+.rc-mp-icon-label {
+    transition:
+        color 0.3s ease,
+        text-shadow 0.3s ease;
+}
+@keyframes rc-preview-rift-open {
+    0% {
+        opacity: 0;
+        transform: scale(0.78);
+    }
+    62% {
+        opacity: 1;
+        transform: scale(1.035);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes rc-preview-rift-frame {
+    0% {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+    62% {
+        opacity: 1;
+        transform: scale(1.035);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes rc-preview-rift-energy {
+    from {
+        filter: brightness(1);
+    }
+    to {
+        filter: brightness(1.12);
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .rc-mp-icon-art::after {
+        transition: none;
+    }
+    .rc-mp-icon:is(:hover, :focus-within) .rc-mp-icon-art::before,
+    .rc-mp-icon:is(:hover, :focus-within) .rc-mp-rift-frame {
+        animation: none;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        padding: 24px 18px;
+    }
+    .rc-mp-icon {
+        flex-basis: calc((100% - 16px) / 2);
+    }
+    .rc-mp-icon-art {
+        width: min(100%, 175px);
+    }
+}

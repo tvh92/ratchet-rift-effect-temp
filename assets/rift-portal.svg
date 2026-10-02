@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs>
+    <!-- Geometry only: each use supplies its own stroke, opacity and blur. -->
+    <path id="opening" d="M139 61 L160 65 Q177 72 194 62 L207 86 L230 90 L235 118 Q253 133 253 152 L242 166 L251 182 Q249 209 233 224 L218 227 L207 249 Q190 264 169 260 L155 254 L135 262 Q115 259 99 245 L96 229 L78 224 Q64 209 66 187 L58 174 L64 154 Q56 134 67 113 L82 106 L91 85 Q111 70 127 72 Z"/>
+    <path id="cells" d="M127 72 L119 52 L134 37 L139 61 M119 52 L102 50 L91 85 M102 50 L89 35 L75 51 L80 70 L91 85 M160 65 L172 44 L194 47 L194 62 M172 44 L174 26 L190 31 L194 47 M194 47 L211 36 L224 48 L217 67 L207 86 M224 48 L238 60 L230 90 M217 67 L242 74 L250 94 L230 90 M242 74 L260 69 L272 88 L250 94 M235 118 L260 115 L271 131 L253 152 M260 115 L279 108 L284 124 L271 131 M242 166 L265 170 L275 192 L251 182 M265 170 L282 154 M233 224 L252 231 L241 250 L218 227 M252 231 L269 238 M207 249 L219 269 L197 285 L184 263 M169 260 L164 280 L144 283 L135 262 M144 283 L129 294 L116 278 L119 258 M99 245 L85 261 L66 253 L72 233 L78 224 M85 261 L89 282 M66 187 L47 197 L45 221 L65 213 M47 197 L34 184 L42 162 L58 174 M42 162 L32 146 L47 126 L64 154 M67 113 L49 102 L53 83 L75 80 L82 106 M49 102 L29 98 L22 120 L47 126 M53 83 L39 69 L53 55 L75 80"/>
+    <path id="cracks" d="M134 37 L129 20 L133 7 M119 52 L102 24 L88 18 L80 6 M75 51 L60 37 L44 35 L32 18 M60 37 L63 15 M39 69 L24 64 L11 48 M29 98 L12 93 L4 100 M22 120 L9 135 L11 155 M32 146 L17 170 L4 176 M34 184 L21 205 L7 213 M45 221 L29 231 L20 256 L7 273 M29 231 L12 236 M66 253 L54 277 L40 286 L30 306 M89 282 L79 298 L83 312 M129 294 L125 313 M197 285 L202 300 L220 314 M219 269 L237 280 L254 276 L275 296 M237 280 L234 302 M269 238 L288 247 L302 267 M288 247 L309 243 M275 192 L293 196 L310 188 M282 154 L302 145 L316 149 M279 108 L296 97 L309 99 M272 88 L284 73 L305 63 M260 69 L269 48 L283 37 L289 13 M269 48 L254 35 M238 60 L243 32 L236 15 M211 36 L218 18 L231 6 M174 26 L169 12 L174 3"/>
+    <linearGradient id="hot" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fca6ff"/><stop offset=".3" stop-color="#fff0ff"/>
+      <stop offset=".54" stop-color="#ff73ef"/><stop offset=".8" stop-color="#ffceff"/><stop offset="1" stop-color="#fb78ff"/>
+    </linearGradient>
+    <linearGradient id="pane" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f9a5ff" stop-opacity=".32"/><stop offset=".45" stop-color="#9817ef" stop-opacity=".08"/><stop offset="1" stop-color="#ee50ff" stop-opacity=".24"/>
+    </linearGradient>
+    <radialGradient id="fade"><stop offset=".5" stop-color="white"/><stop offset=".72" stop-color="white" stop-opacity=".45"/><stop offset=".94" stop-color="white" stop-opacity="0"/></radialGradient>
+    <mask id="falloff"><rect width="320" height="320" fill="url(#fade)"/></mask>
+    <filter id="bloom" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="fine" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.2"/></filter>
+  </defs>
+  <!-- Unequal fractured panes continue outward into the surrounding surface. -->
+  <g mask="url(#falloff)">
+    <use href="#cracks" fill="none" stroke="#ce24fa" stroke-width="3" opacity=".48" filter="url(#fine)"/>
+    <use href="#cracks" fill="none" stroke="#ef83ff" stroke-width=".85" opacity=".82"/>
+  </g>
+  <!-- Local bloom follows the opening; it does not blur the entire fracture network. -->
+  <use href="#opening" fill="none" stroke="#f21cfa" stroke-width="28" opacity=".78" filter="url(#bloom)"/>
+  <use mask="url(#falloff)" href="#cells" fill="none" stroke="#ec29fa" stroke-width="13" opacity=".54" filter="url(#glow)"/>
+  <use href="#opening" fill="none" stroke="#ff4bf6" stroke-width="16" opacity=".93" filter="url(#glow)"/>
+  <!-- Refracted purple slivers intrude into the opening, leaving the center clear. -->
+  <g fill="url(#pane)" stroke="#c35bff" stroke-width="1.15" stroke-linejoin="round">
+    <path d="M82 106 L104 101 L117 135 L107 161 L66 187 L64 154 L67 113 Z"/>
+    <path d="M194 62 L185 91 L204 120 L235 118 L230 90 L207 86 Z"/>
+    <path d="M253 152 L224 155 L215 176 L230 190 L251 182 L242 166 Z"/>
+    <path d="M218 227 L191 224 L177 242 L169 260 L190 258 L207 249 Z"/>
+    <path d="M96 229 L118 219 L139 239 L135 262 L113 252 L99 245 Z"/>
+  </g>
+  <use mask="url(#falloff)" href="#cells" fill="none" stroke="#ff89f9" stroke-width="3.7" opacity=".8" filter="url(#fine)"/>
+  <use mask="url(#falloff)" href="#cells" fill="none" stroke="url(#hot)" stroke-width="1.65" stroke-linejoin="round" opacity=".95"/>
+  <use href="#opening" fill="none" stroke="#ff88f9" stroke-width="6" opacity=".92"/>
+  <use href="#opening" fill="none" stroke="url(#hot)" stroke-width="1.65" stroke-linejoin="round" opacity=".92"/>
+  <!-- Uneven white-pink hotspots where several fractures meet. -->
+  <g fill="#ffe8ff" filter="url(#glow)">
+    <ellipse cx="202" cy="72" rx="9" ry="15" opacity=".75"/>
+    <ellipse cx="66" cy="126" rx="8" ry="12" opacity=".6"/>
+    <ellipse cx="109" cy="249" rx="13" ry="6" opacity=".6"/>
+  </g>
+</svg>
