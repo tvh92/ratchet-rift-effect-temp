@@ -1,6 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
   <defs>
-    <radialGradient id="void" cx=".64" cy=".27" r=".85"><stop stop-color="#250652"/><stop offset=".38" stop-color="#110329"/><stop offset=".78" stop-color="#060019"/><stop offset="1" stop-color="#200342"/></radialGradient>
+    <!-- Geometry only: shared with rift-portal.svg; each use supplies its own paint. -->
+    <path id="opening" d="M257.9 160.0 C258.0 164.3 256.4 168.8 255.0 173.0 C253.7 177.2 252.0 181.3 250.0 185.1 C248.0 188.9 245.9 192.7 243.1 195.8 C240.2 198.9 235.0 200.4 232.7 203.6 C230.3 206.9 230.5 211.3 229.1 215.1 C227.6 218.9 226.1 223.0 223.8 226.4 C221.6 229.7 218.9 233.2 215.5 235.2 C212.0 237.1 207.0 236.7 203.3 237.9 C199.5 239.2 196.3 240.9 192.9 242.5 C189.4 244.1 186.2 246.5 182.6 247.7 C179.0 248.9 175.1 249.4 171.4 249.8 C167.6 250.2 163.8 250.0 160.0 250.1 C156.2 250.2 152.3 251.0 148.5 250.6 C144.8 250.1 141.0 248.9 137.5 247.5 C133.9 246.1 131.6 242.2 127.4 241.9 C123.2 241.7 117.0 245.8 112.3 246.0 C107.5 246.1 102.4 245.3 98.8 242.9 C95.3 240.5 93.1 235.7 91.0 231.8 C88.8 227.8 87.8 223.1 85.9 219.1 C84.0 215.2 81.1 212.1 79.7 208.2 C78.3 204.3 78.2 199.6 77.5 195.5 C76.9 191.4 76.2 187.5 75.8 183.5 C75.4 179.5 75.2 175.5 75.3 171.6 C75.4 167.7 75.8 163.8 76.4 160.0 C77.0 156.2 78.2 152.6 79.0 148.9 C79.7 145.2 81.6 142.2 80.9 138.0 C80.2 133.7 75.0 127.6 74.8 123.3 C74.6 119.0 77.7 115.4 79.9 111.9 C82.2 108.5 85.5 105.8 88.2 102.7 C90.9 99.6 93.3 96.4 96.1 93.5 C98.9 90.6 101.8 87.8 104.8 85.2 C107.9 82.7 111.2 80.4 114.5 78.0 C117.8 75.6 121.0 73.0 124.5 70.9 C128.0 68.8 131.7 66.4 135.7 65.5 C139.6 64.6 144.0 65.6 148.0 65.5 C152.1 65.4 156.0 64.8 160.0 65.0 C164.0 65.2 167.8 66.5 171.8 66.7 C175.8 66.9 180.5 64.6 184.2 66.0 C187.9 67.3 191.0 71.7 194.0 74.7 C197.0 77.7 199.5 81.0 202.2 84.0 C204.9 86.9 207.4 89.5 210.0 92.2 C212.6 94.8 215.0 97.5 217.9 99.8 C220.7 102.2 224.0 104.0 227.3 106.3 C230.6 108.6 234.7 110.5 237.5 113.4 C240.4 116.3 242.5 120.0 244.2 123.7 C245.9 127.4 246.1 131.6 247.8 135.5 C249.5 139.4 252.7 143.0 254.3 147.1 C256.0 151.2 257.8 155.7 257.9 160.0Z"/>
+    <radialGradient id="void" cx=".46" cy=".44" r=".62">
+      <stop stop-color="#1b0748"/><stop offset=".55" stop-color="#14043a"/><stop offset=".82" stop-color="#3a0b8a"/><stop offset="1" stop-color="#b52af0"/>
+    </radialGradient>
+    <!-- Marbled indigo/lavender turbulence clipped to the opening. -->
+    <filter id="marble" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency=".014 .026" numOctaves="4" seed="11" result="noise"/>
+      <feDisplacementMap in="noise" in2="noise" scale="40" xChannelSelector="R" yChannelSelector="B" result="swirl"/>
+      <feColorMatrix in="swirl" type="matrix" values="0 0 0 0 .78  0 0 0 0 .62  0 0 0 0 1  0 3.2 0 0 -1.62" result="streaks"/>
+      <feComposite in="streaks" in2="SourceGraphic" operator="in"/>
+    </filter>
+    <filter id="ink" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency=".02 .017" numOctaves="3" seed="4" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 .2  0 0 0 0 .06  0 0 0 0 .62  0 0 -3 0 1.9" result="blots"/>
+      <feComposite in="blots" in2="SourceGraphic" operator="in"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="6"/></filter>
+    <clipPath id="inside"><use href="#opening"/></clipPath>
   </defs>
-  <path d="M139 61 L160 65 Q177 72 194 62 L207 86 L230 90 L235 118 Q253 133 253 152 L242 166 L251 182 Q249 209 233 224 L218 227 L207 249 Q190 264 169 260 L155 254 L135 262 Q115 259 99 245 L96 229 L78 224 Q64 209 66 187 L58 174 L64 154 Q56 134 67 113 L82 106 L91 85 Q111 70 127 72 Z" fill="url(#void)"/>
+  <use href="#opening" fill="url(#void)"/>
+  <use href="#opening" fill="#000" filter="url(#ink)" opacity=".9"/>
+  <use href="#opening" fill="#000" filter="url(#marble)" opacity=".7"/>
+  <!-- Pink light spilling inward from the rim. -->
+  <g clip-path="url(#inside)">
+    <use href="#opening" fill="none" stroke="#e23cf6" stroke-width="22" opacity=".85" filter="url(#soft)"/>
+  </g>
 </svg>

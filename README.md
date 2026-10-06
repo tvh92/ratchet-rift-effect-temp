@@ -15,8 +15,8 @@ Then open http://localhost:8000. Hover an icon or use Tab to focus a navigation 
 ## Files to edit
 
 - `rift.css`: demo geometry, selected effect, opening/pulse animation, gold-orange glow, and reduced-motion behavior.
-- `assets/rift-portal.svg`: uneven pink rim, connected fracture network, purple glass slivers and glow layers in front of the icon.
-- `assets/rift-aperture.svg`: dark opening behind the icon. Keep its opening path aligned with the frame.
+- `assets/rift-portal.svg`: broad magenta bloom, cellular rim (Voronoi cells between glowing veins), tapered rays, connected outer cracks and translucent violet glass panes, all in front of the icon.
+- `assets/rift-aperture.svg`: dark indigo opening with marbled lavender turbulence and pink inner spill, behind the icon. Keep its opening path identical to the frame's.
 - `index.html`: eleven labelled navigation links with explicit art areas and a separate decorative frame.
 - `reference/rift-apart-reference.png`: user-supplied in-game design reference.
 - `assets/sources.json`: original external icon URLs.
