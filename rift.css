@@ -188,7 +188,7 @@ a {
     pointer-events: none;
 }
 .rc-mp-icon-art::before {
-    inset: -13%;
+    inset: -24.8%;
     z-index: 0;
     border-radius: 0;
     background: url("assets/rift-aperture.svg") center / contain no-repeat;
@@ -198,7 +198,7 @@ a {
 }
 .rc-mp-rift-frame {
     position: absolute;
-    inset: -13%;
+    inset: -24.8%;
     z-index: 2;
     background: url("assets/rift-portal.svg") center / contain no-repeat;
     opacity: 0;
