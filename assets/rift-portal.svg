@@ -1,47 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -30 380 380">
   <defs>
-    <!-- Geometry only: each use supplies its own stroke, opacity and blur. -->
+    <!-- Geometry only: each use supplies its own stroke, opacity and blur. Generated (seed 4). -->
     <path id="opening" d="M139 61 L160 65 Q177 72 194 62 L207 86 L230 90 L235 118 Q253 133 253 152 L242 166 L251 182 Q249 209 233 224 L218 227 L207 249 Q190 264 169 260 L155 254 L135 262 Q115 259 99 245 L96 229 L78 224 Q64 209 66 187 L58 174 L64 154 Q56 134 67 113 L82 106 L91 85 Q111 70 127 72 Z"/>
-    <path id="cells" d="M127 72 L119 52 L134 37 L139 61 M119 52 L102 50 L91 85 M102 50 L89 35 L75 51 L80 70 L91 85 M160 65 L172 44 L194 47 L194 62 M172 44 L174 26 L190 31 L194 47 M194 47 L211 36 L224 48 L217 67 L207 86 M224 48 L238 60 L230 90 M217 67 L242 74 L250 94 L230 90 M242 74 L260 69 L272 88 L250 94 M235 118 L260 115 L271 131 L253 152 M260 115 L279 108 L284 124 L271 131 M242 166 L265 170 L275 192 L251 182 M265 170 L282 154 M233 224 L252 231 L241 250 L218 227 M252 231 L269 238 M207 249 L219 269 L197 285 L184 263 M169 260 L164 280 L144 283 L135 262 M144 283 L129 294 L116 278 L119 258 M99 245 L85 261 L66 253 L72 233 L78 224 M85 261 L89 282 M66 187 L47 197 L45 221 L65 213 M47 197 L34 184 L42 162 L58 174 M42 162 L32 146 L47 126 L64 154 M67 113 L49 102 L53 83 L75 80 L82 106 M49 102 L29 98 L22 120 L47 126 M53 83 L39 69 L53 55 L75 80"/>
-    <path id="cracks" d="M134 37 L129 20 L133 7 M119 52 L102 24 L88 18 L80 6 M75 51 L60 37 L44 35 L32 18 M60 37 L63 15 M39 69 L24 64 L11 48 M29 98 L12 93 L4 100 M22 120 L9 135 L11 155 M32 146 L17 170 L4 176 M34 184 L21 205 L7 213 M45 221 L29 231 L20 256 L7 273 M29 231 L12 236 M66 253 L54 277 L40 286 L30 306 M89 282 L79 298 L83 312 M129 294 L125 313 M197 285 L202 300 L220 314 M219 269 L237 280 L254 276 L275 296 M237 280 L234 302 M269 238 L288 247 L302 267 M288 247 L309 243 M275 192 L293 196 L310 188 M282 154 L302 145 L316 149 M279 108 L296 97 L309 99 M272 88 L284 73 L305 63 M260 69 L269 48 L283 37 L289 13 M269 48 L254 35 M238 60 L243 32 L236 15 M211 36 L218 18 L231 6 M174 26 L169 12 L174 3"/>
+    <path id="cells" d="M139 61 L138 50 L134 33 M134 33 L151 34 L176 22 L191 21 L216 28 M194 62 L205 44 L216 28 M216 28 L219 38 L223 46 M207 86 L217 64 L223 46 M223 46 L232 63 L250 93 L273 114 L286 134 M253 152 L272 138 L286 134 M286 134 L286 144 L281 157 L277 170 L278 181 M251 182 L266 182 L278 181 M278 181 L272 194 L256 209 L252 221 L243 240 M218 227 L227 233 L243 240 M243 240 L231 256 L205 280 L185 285 L161 304 M169 260 L167 278 L161 304 M161 304 L156 298 L152 291 L144 282 M155 254 L151 266 L144 282 M144 282 L136 284 L130 288 L118 286 M135 262 L127 273 L118 286 M118 286 L112 283 L103 276 L91 273 L87 268 M99 245 L93 258 L87 268 M87 268 L79 262 L75 256 L69 254 L62 246 M78 224 L72 231 L62 246 M62 246 L52 228 L45 191 L42 161 L26 136 M64 154 L48 142 L26 136 M26 136 L40 119 L46 105 L55 87 L59 71 M82 106 L71 93 L59 71 M59 71 L58 71 L62 76 M91 85 L79 81 L62 76 M62 76 L82 58 L95 48 L119 37 L134 33 M216 28 L230 15 L239 -4 M239 -4 L246 4 L252 9 M318 108 L312 99 L309 89 M286 134 L305 123 L318 108 M318 108 L323 123 L333 135 L325 153 L324 166 M278 181 L296 170 L324 166 M324 166 L321 172 L315 181 M262 267 L267 263 L271 252 M243 240 L254 253 L262 267 M262 267 L252 273 L248 279 M178 335 L182 330 L193 324 M161 304 L171 322 L178 335 M178 335 L170 337 M135 318 L139 323 M144 282 L138 295 L135 318 M135 318 L130 324 L126 331 L123 319 M118 286 L119 299 L123 319 M123 319 L112 313 L103 306 M22 258 L33 267 L42 269 M62 246 L46 247 L22 258 M22 258 L16 249 L13 236 M-11 141 L-11 150 L-8 155 M26 136 L13 133 L-11 141 M-11 141 L-5 135 L1 126 M56 47 L50 59 L44 66 M62 76 L57 57 L56 47 M56 47 L108 38 L147 14 L183 4 L239 -4"/>
+    <path id="cracks" d="M245 -17 L263 -24 M248 -27 L240 -39 M251 -46 M239 -4 L245 -17 L248 -27 L251 -46 M337 105 L347 111 L364 120 M318 108 L337 105 L355 104 L370 104 M342 173 L353 185 M324 166 L342 173 L351 179 L361 184 M280 290 L278 307 M289 302 M270 283 L280 290 L289 302 M262 267 L270 283 L275 298 L282 310 M178 335 L182 350 L188 359 L200 373 M132 338 L118 348 M135 318 L132 338 L128 348 L119 358 M123 319 L118 332 L109 346 L102 354 L93 363 M-13 282 M10 262 L-0 270 L-13 282 M-2 268 L-6 283 L-14 296 M22 258 L10 262 L-2 268 L-20 273 L-32 280 M-27 143 L-36 156 M-11 141 L-27 143 L-39 142 L-57 146 M31 34 L17 21 M46 38 L31 34 L16 30 M56 47 L46 38 L34 22 L28 13 L21 -3 M128 2 L133 -12 M134 33 L132 19 L128 2 L124 -15 M238 4 M223 46 L228 31 L234 18 L238 4 M59 71 L49 56 L43 43"/>
     <linearGradient id="hot" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#fca6ff"/><stop offset=".3" stop-color="#fff0ff"/>
-      <stop offset=".54" stop-color="#ff73ef"/><stop offset=".8" stop-color="#ffceff"/><stop offset="1" stop-color="#fb78ff"/>
+      <stop stop-color="#ffc4ff"/><stop offset=".3" stop-color="#fff4ff"/>
+      <stop offset=".54" stop-color="#ff8cf3"/><stop offset=".8" stop-color="#ffe0ff"/><stop offset="1" stop-color="#ff9cff"/>
     </linearGradient>
     <linearGradient id="pane" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#f9a5ff" stop-opacity=".32"/><stop offset=".45" stop-color="#9817ef" stop-opacity=".08"/><stop offset="1" stop-color="#ee50ff" stop-opacity=".24"/>
+      <stop stop-color="#ffd0ff" stop-opacity=".95"/><stop offset=".45" stop-color="#c040ff" stop-opacity=".4"/><stop offset="1" stop-color="#ff7af4" stop-opacity=".85"/>
     </linearGradient>
-    <radialGradient id="fade"><stop offset=".5" stop-color="white"/><stop offset=".72" stop-color="white" stop-opacity=".45"/><stop offset=".94" stop-color="white" stop-opacity="0"/></radialGradient>
-    <mask id="falloff"><rect width="320" height="320" fill="url(#fade)"/></mask>
-    <filter id="bloom" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="4"/></filter>
-    <filter id="fine" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.2"/></filter>
+    <linearGradient id="sliver" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#e7b8ff" stop-opacity=".42"/><stop offset=".5" stop-color="#6f3cff" stop-opacity=".12"/><stop offset="1" stop-color="#d06bff" stop-opacity=".3"/>
+    </linearGradient>
+    <radialGradient id="haze" gradientUnits="userSpaceOnUse" cx="159" cy="162" r="190">
+      <stop offset=".34" stop-color="#ff2ef2" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#ff2ef2" stop-opacity=".8"/>
+      <stop offset=".62" stop-color="#e01cf5" stop-opacity=".5"/>
+      <stop offset=".8" stop-color="#a514e8" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#a514e8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fade" gradientUnits="userSpaceOnUse" cx="159" cy="162" r="190">
+      <stop offset=".5" stop-color="white"/><stop offset=".64" stop-color="white" stop-opacity=".6"/><stop offset=".82" stop-color="white" stop-opacity=".15"/><stop offset=".95" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="falloff" maskUnits="userSpaceOnUse" x="-30" y="-30" width="380" height="380"><rect x="-30" y="-30" width="380" height="380" fill="url(#fade)"/></mask>
+    <filter id="bloom" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="12"/></filter>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3.5"/></filter>
+    <filter id="fine" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.1"/></filter>
   </defs>
-  <!-- Unequal fractured panes continue outward into the surrounding surface. -->
-  <g mask="url(#falloff)">
-    <use href="#cracks" fill="none" stroke="#ce24fa" stroke-width="3" opacity=".48" filter="url(#fine)"/>
-    <use href="#cracks" fill="none" stroke="#ef83ff" stroke-width=".85" opacity=".82"/>
+  <!-- Broad saturated bloom that peaks at the rim and fades softly outward. -->
+  <rect x="-30" y="-30" width="380" height="380" fill="url(#haze)"/>
+  <use href="#opening" fill="none" stroke="#f21cfa" stroke-width="38" opacity=".7" filter="url(#bloom)"/>
+  <!-- Translucent glass panes: unequal cells of the fractured surface. -->
+  <g mask="url(#falloff)" fill="url(#pane)">
+    <path d="M194 62 L207 86 L223 46 L219 38 L216 28 Z" opacity="0.66"/>
+    <path d="M207 86 L230 90 L235 118 L253 152 L286 134 L250 93 L223 46 Z" opacity="0.67"/>
+    <path d="M253 152 L242 166 L251 182 L278 181 L281 157 L286 134 Z" opacity="0.43"/>
+    <path d="M251 182 L233 224 L218 227 L243 240 L256 209 L278 181 Z" opacity="0.75"/>
+    <path d="M169 260 L155 254 L144 282 L152 291 L161 304 Z" opacity="0.69"/>
+    <path d="M155 254 L135 262 L118 286 L130 288 L144 282 Z" opacity="0.63"/>
+    <path d="M99 245 L96 229 L78 224 L62 246 L75 256 L87 268 Z" opacity="0.63"/>
+    <path d="M78 224 L66 187 L58 174 L64 154 L26 136 L45 191 L62 246 Z" opacity="0.58"/>
+    <path d="M64 154 L67 113 L82 106 L59 71 L46 105 L26 136 Z" opacity="0.47"/>
+    <path d="M82 106 L91 85 L62 76 L58 71 L59 71 Z" opacity="0.76"/>
+    <path d="M91 85 L127 72 L139 61 L134 33 L95 48 L62 76 Z" opacity="0.69"/>
+    <path d="M216 28 L223 46 L286 134 L318 108 L287 44 L239 -4 Z" opacity="0.32"/>
+    <path d="M286 134 L278 181 L324 166 L333 135 L318 108 Z" opacity="0.14"/>
+    <path d="M278 181 L243 240 L262 267 L293 217 L324 166 Z" opacity="0.31"/>
+    <path d="M144 282 L118 286 L123 319 L126 331 L135 318 Z" opacity="0.14"/>
+    <path d="M118 286 L87 268 L62 246 L22 258 L74 286 L123 319 Z" opacity="0.21"/>
+    <path d="M26 136 L59 71 L62 76 L56 47 L25 95 L-11 141 Z" opacity="0.17"/>
   </g>
-  <!-- Local bloom follows the opening; it does not blur the entire fracture network. -->
-  <use href="#opening" fill="none" stroke="#f21cfa" stroke-width="28" opacity=".78" filter="url(#bloom)"/>
-  <use mask="url(#falloff)" href="#cells" fill="none" stroke="#ec29fa" stroke-width="13" opacity=".54" filter="url(#glow)"/>
-  <use href="#opening" fill="none" stroke="#ff4bf6" stroke-width="16" opacity=".93" filter="url(#glow)"/>
-  <!-- Refracted purple slivers intrude into the opening, leaving the center clear. -->
-  <g fill="url(#pane)" stroke="#c35bff" stroke-width="1.15" stroke-linejoin="round">
+  <!-- Cracks continue outward from the outer cell corners. -->
+  <g mask="url(#falloff)">
+    <use href="#cracks" fill="none" stroke="#f02cfb" stroke-width="5" stroke-linejoin="round" opacity=".75" filter="url(#glow)"/>
+    <use href="#cracks" fill="none" stroke="#ffc6fc" stroke-width="1.3" stroke-linejoin="round"/>
+  </g>
+  <use mask="url(#falloff)" href="#cells" fill="none" stroke="#f22afa" stroke-width="11" stroke-linejoin="round" opacity=".7" filter="url(#glow)"/>
+  <!-- Refracted slivers intrude into the opening, leaving the center clear. -->
+  <g fill="url(#sliver)" stroke="#d27bff" stroke-width="1.1" stroke-linejoin="round">
     <path d="M82 106 L104 101 L117 135 L107 161 L66 187 L64 154 L67 113 Z"/>
     <path d="M194 62 L185 91 L204 120 L235 118 L230 90 L207 86 Z"/>
     <path d="M253 152 L224 155 L215 176 L230 190 L251 182 L242 166 Z"/>
     <path d="M218 227 L191 224 L177 242 L169 260 L190 258 L207 249 Z"/>
     <path d="M96 229 L118 219 L139 239 L135 262 L113 252 L99 245 Z"/>
   </g>
-  <use mask="url(#falloff)" href="#cells" fill="none" stroke="#ff89f9" stroke-width="3.7" opacity=".8" filter="url(#fine)"/>
-  <use mask="url(#falloff)" href="#cells" fill="none" stroke="url(#hot)" stroke-width="1.65" stroke-linejoin="round" opacity=".95"/>
-  <use href="#opening" fill="none" stroke="#ff88f9" stroke-width="6" opacity=".92"/>
-  <use href="#opening" fill="none" stroke="url(#hot)" stroke-width="1.65" stroke-linejoin="round" opacity=".92"/>
-  <!-- Uneven white-pink hotspots where several fractures meet. -->
+  <use mask="url(#falloff)" href="#cells" fill="none" stroke="#ff8ff9" stroke-width="3.4" stroke-linejoin="round" opacity=".85" filter="url(#fine)"/>
+  <use mask="url(#falloff)" href="#cells" fill="none" stroke="url(#hot)" stroke-width="1.5" stroke-linejoin="round" opacity=".95"/>
+  <!-- Rim: glow, uneven thick segments, then a sharp white-pink core. -->
+  <use href="#opening" fill="none" stroke="#ff3ff4" stroke-width="15" opacity=".9" filter="url(#glow)"/>
+  <use href="#opening" fill="none" stroke="#ff7af6" stroke-width="9" stroke-linecap="round" stroke-dasharray="70 22 34 46 18 30" opacity=".9" filter="url(#fine)"/>
+  <use href="#opening" fill="none" stroke="#ffa6fa" stroke-width="5" stroke-linejoin="round" opacity=".95"/>
+  <use href="#opening" fill="none" stroke="url(#hot)" stroke-width="2" stroke-linejoin="round"/>
+  <!-- White-pink hotspots where fractures meet the rim. -->
   <g fill="#ffe8ff" filter="url(#glow)">
     <ellipse cx="202" cy="72" rx="9" ry="15" opacity=".75"/>
     <ellipse cx="66" cy="126" rx="8" ry="12" opacity=".6"/>
     <ellipse cx="109" cy="249" rx="13" ry="6" opacity=".6"/>
+    <circle cx="144" cy="282" r="4" opacity=".55"/>
+    <circle cx="216" cy="28" r="4" opacity=".55"/>
+    <circle cx="118" cy="286" r="4" opacity=".55"/>
   </g>
 </svg>
